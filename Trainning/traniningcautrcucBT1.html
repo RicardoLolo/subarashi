@@ -94,6 +94,16 @@
 <!--</script>-->
 <script>
     //Bài 7
+    let thoiGianGoi = +prompt("Nhập số thời gian cuộc gọi");
+                let cuocDienThoai = 0;
+                if (thoiGianGoi > 200) {
+                    cuocDienThoai = (thoiGianGoi - 200)*200 + 150*400 + 50*600;
+                } else if (thoiGianGoi > 50) {
+                    cuocDienThoai = (thoiGianGoi - 50)*400 + 50*600;
+                } else {
+                    cuocDienThoai = thoiGianGoi * 600;
+                }
+                alert("Tổng cước điện thoại = " + cuocDienThoai);
 
 </script>
 </body>
